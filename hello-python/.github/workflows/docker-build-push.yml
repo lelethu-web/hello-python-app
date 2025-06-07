@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'hello-python/**'
-      - '.github/workflows/**'
 
 jobs:
   build-and-push:
