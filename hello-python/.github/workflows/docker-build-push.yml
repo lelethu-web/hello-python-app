@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - main  # No `paths:` filter!
 
 jobs:
   build-and-push:
@@ -25,7 +25,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./hello-python
-          file: ./hello-python/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: true
           tags: b37775b30994/hello-python:latest
+
