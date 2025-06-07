@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: b37775b30994/hello-python-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8083
+  targetPort: 5000
+
+ingress:
+  enabled: false
