@@ -18,3 +18,12 @@ hello-python-app/
 │ ├── service.yaml
 │ └── ...
 └── README.md
+
+
+## 🚀 Argo CD Setup
+
+Login to Argo CD:
+
+```bash
+argocd login localhost:8084 --username admin --password <your-password> --insecure
+
